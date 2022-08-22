@@ -1,0 +1,228 @@
+/* Universal Styles */
+* {
+    box-sizing: border-box;
+}
+
+/* HTML Styles */
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Elements */
+
+body {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: rgba(255, 235, 250, 0);
+
+}
+
+ul {
+    margin-top: 0;
+    
+}
+
+ul li {
+    list-style-type: none;
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+    background-color: white;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: rgb(242, 242, 242, .5);
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+/* ID Selectotrs */
+
+#heading-text {
+    font-weight: bolder;
+    font-size: 43px;
+}
+
+/* Classes */
+
+.menu-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-sec {
+    width: 100%;
+    margin-right: 2.5rem;
+    text-align: center;
+}
+
+.heading h1 {
+    font-weight: bolder;
+}
+
+.menu-sec ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.about-me {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+.img-cont img {
+    justify-content: center;
+    align-items: center;
+}
+
+.myself-intro {
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.portfolio-section {
+    padding-bottom: 2.5rem;
+}
+
+.portfolio-section p {
+    font-size: 18px;
+}
+
+.portfolio-section img {
+    width: 100%;
+}
+
+.portfolio-section p, .footer-p-content {
+    text-align: center;;
+}
+
+.footer-p-content {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 3rem;
+}
+
+
+.heading-format {
+    text-align: center;
+    
+}
+
+footer {
+    padding-top: 5rem;
+}
+
+.footer-p-content p a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-p-content p a:hover, .bottom-footer a:hover, .menu-sec ul li a:hover {
+    color: orangered;
+}
+
+.bottom-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.bottom-footer p {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bottom-footer a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bottom-menu {
+    display: none;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+    .menu-sec ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-sec ul li {
+        background-color: white;
+    }
+
+    .portfolio-DT-View {
+        width: 100%;
+        display: flex;
+    }
+
+    .portfolio-DT-View img {
+        padding-right: 20px;
+    }
+
+    .portfolio-DT-View p {
+        width: 90%;
+    }
+
+    .portfolio-section h2 {
+        padding-bottom: 15px;
+    }
+
+    .tablet-desktop {
+        width: 100%;
+    }
+
+    .hidden-link {
+        display: none;
+    }
+
+    .bottom-menu {
+        display: flex;
+    }
+
+    .bottom-menu ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bottom-menu ul li {
+        padding: 20px 10px 2px;
+        font-size: 15px;
+        background-color: white;
+    }
+}
+
+/*
+@media screen and (min-width:768px){
+    
+
+
+.bottom-menu ul {
+        display: flex;
+        flex-direction: row;
+}
+
+.bottom-menu ul li {
+        padding: 20px 10px 2px;
+        font-size: 15px;
+        background-color: white;
+}
+}*/
