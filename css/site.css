@@ -14,6 +14,10 @@ body {
     font-weight: 400;
 }
 
+h1 {
+    text-align: center;
+}
+
 ul {
     margin-top: 0;
 }
@@ -27,7 +31,34 @@ ul li {
     margin-bottom: 10px;
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+h3, p {
+    text-align: center;
+}
+
 /*      Main Body Classes       */
+
+.about-me img {
+    width: 100%;
+}
+
+.upper-wrapper-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-about, .content-about img {
+    width: 100%;
+}
+
+.content-about p {
+    text-align: center;
+}
+
 .wrapper-col {
     display: flex;
     flex-direction: column;
@@ -35,6 +66,10 @@ ul li {
 
 .wrapper-content, .wrapper-content img {
     width: 100%;
+}
+
+.wrapper-content {
+    padding-bottom: 2rem;
 }
 
 footer {
@@ -53,12 +88,15 @@ footer {
     width: 100%;
     margin-right: 2.5rem;
     text-align: center;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
 }
 
 .menu-sec ul li a {
     color: black;
     text-decoration: none;
 }
+
 
 .heading h1 {
     font-weight: bolder;
@@ -76,7 +114,8 @@ footer {
     color: black;
 }
 
-.footer-p-content p a:hover, .bottom-footer a:hover, .menu-sec ul li a:hover {
+
+.footer-p-content p a:hover, .bottom-footer a:hover, nav ul li a:hover {
     color: orangered;
 }
 
@@ -102,6 +141,11 @@ footer {
     display: none;
 }
 
+/*      ID Styles       */
+#email-link {
+    font-weight: bolder;
+}
+
 
 /*          Media Queries           */
 
@@ -120,19 +164,89 @@ footer {
         padding-left: 2rem;
     }
 
+
     .bottom-menu {
         display: flex;
     }
+
+    
 
     .hidden-link {
         display: none;
     }
 
+    .menu-sec li {
+        display: inline-block;
+        width: auto;
+        margin-right: 25px;
+        background-color: transparent;
+    }
+
+    .menu-sec ul li {
+        padding: 0;
+    }
+
+    .bottom-menu ul {
+        display: flex;
+        flex-direction: row;
+        padding-top: 1.5rem;
+    }
+
+    .bottom-menu ul li {
+        padding-right: 20px;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        margin: auto;
+    }
+
+    .about-me img {
+        height: 300px;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .about-me p {
+        width: 80%;
+    }
+    
     /*      Desktop Screen Size of 1024 pixels      */
 
-    @media screen and (min-width:1024px) {
-        .wrapper-content {
-            width: 33%;
-        }
+
+}
+
+@media screen and (min-width:1024px) {
+    .wrapper-content {
+        width: 33%;
     }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .menu-sec, .menu-sec li {
+       width: initial;
+       margin-bottom: 0;
+    }
+
+    .menu-heading {
+        padding-left: 30px;
+    }
+
+    .about-me img {
+        height: 400px;
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .about-me p {
+        width: 80%;
+    }
+
 }
