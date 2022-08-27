@@ -10,36 +10,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@900&display=swap" rel="stylesheet">
 </head>
     
     <body>
 
-        <main> <!--
-             <div class="menu-heading">
-                <div class="heading">
-                    <h1 id="toppage"><span id="heading-text">Student Name</span></h1>
-                </div>
-                <div class="menu-sec">
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </div>-->
+        <main> 
 
             <nav>
                 <h1 class="menu-heading">Student Name</h1>
                 <ul class="menu-sec">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#home-link">Home</a></li>
+                    <li><a href="#port-link">Portfolio</a></li>
                     <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact-link">Contact</a></li>
                 </ul>
             </nav>
 
-            <section class="about-me">
+            <section id="home-link" class="about-me">
                 <div>
                     <img src="./img/responsive-layout-profile.png" alt="Profile Image">
                 </div>
@@ -51,7 +41,7 @@
                 </div>
             </section>
  
-            <h1>Portfolio</h1>
+            <h2 id="port-link">Portfolio</h2>
             <section class="wrapper">
                 <div class="wrapper-col">
                     <div class="wrapper-row">
@@ -105,15 +95,15 @@
         <footer>
             <div class="tablet-desktop">
                 <h3 class="heading-format">CONTACT</h3>
-                <div class="footer-p-content">
+                <div id="contact-link" class="footer-p-content">
                     <p>
                         If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!
                     </p>
                     <p>
-                        Phone +1 &lpar;111&rpar; 555-1234
+                        Phone <span id="phone-link">+1 &lpar;111&rpar; 555-1234</span>
                     </p>
                     <p>
-                        <a id="email-link" href="mailto:steven271974@gmail.com">steven271974@gmail.com</a>
+                        Email: <a id="email-link" href="mailto:steven271974@gmail.com">steven271974@gmail.com</a>
                     </p>
     
                 </div>

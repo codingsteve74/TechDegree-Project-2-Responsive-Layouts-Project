@@ -14,8 +14,13 @@ body {
     font-weight: 400;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
+    font-family: 'Noto Serif HK', serif;
+}
+
+h3 {
+    font-family: 'Noto Serif HK', serif;
 }
 
 ul {
@@ -46,6 +51,10 @@ h3, p {
     width: 100%;
 }
 
+.about-me p {
+    line-height: 1.5;
+}
+
 .upper-wrapper-col {
     display: flex;
     flex-direction: column;
@@ -70,6 +79,10 @@ h3, p {
 
 .wrapper-content {
     padding-bottom: 2rem;
+}
+
+.wrapper-content {
+    line-height: 1.2;
 }
 
 footer {
@@ -146,6 +159,10 @@ footer {
     font-weight: bolder;
 }
 
+#phone-link {
+    font-weight: bold;
+}
+
 
 /*          Media Queries           */
 
@@ -206,11 +223,12 @@ footer {
     .about-me img {
         height: 300px;
         width: 400px;
-        margin: 0 auto;
+        margin-right: 2rem;
     }
 
     .about-me p {
         width: 80%;
+        margin-left: 3rem;
     }
     
     /*      Desktop Screen Size of 1024 pixels      */
@@ -242,11 +260,12 @@ footer {
     .about-me img {
         height: 400px;
         width: 600px;
-        margin: 0 auto;
+        margin: 3rem;
     }
 
     .about-me p {
         width: 80%;
+        margin-left: 3rem;
     }
 
 }
