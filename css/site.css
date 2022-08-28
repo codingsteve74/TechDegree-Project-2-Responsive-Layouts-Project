@@ -45,6 +45,10 @@ h3, p {
     text-align: center;
 }
 
+p {
+    font-size: 18px;
+}
+
 /*      Main Body Classes       */
 
 .about-me img {
@@ -115,6 +119,14 @@ footer {
     font-weight: bolder;
 }
 
+.myskills {
+    background-color: lightgray;
+    padding: 15px;
+    box-shadow: 6px 7px black;
+    line-height: 1.2;
+    font-size: 18px;
+}
+
 /*      Footer Classes      */
 .footer-p-content {
     border-bottom: 1px solid lightgray;
@@ -161,6 +173,11 @@ footer {
 
 #phone-link {
     font-weight: bold;
+}
+
+#signature {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
 }
 
 
@@ -220,11 +237,6 @@ footer {
         margin: auto;
     }
 
-    .about-me img {
-        height: 300px;
-        width: 400px;
-        margin-right: 2rem;
-    }
 
     .about-me p {
         width: 80%;
@@ -259,7 +271,7 @@ footer {
 
     .about-me img {
         height: 400px;
-        width: 600px;
+        width: 500px;
         margin: 3rem;
     }
 
