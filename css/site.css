@@ -233,15 +233,29 @@ footer {
     .about-me {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-around;
+        justify-content: space-between;
         margin: auto;
+        
+    }
+
+    .about-me-img {
+        margin: 0 2.5rem 0 2rem;
+        align-items: center;
+    }
+
+    .about-me-p {
+        margin-left: 2rem;
+        align-self: center;
+        text-align: left;
+    }
+
+    .about-me-p p {
+        text-align: left;
+        align-items: center;
     }
 
 
-    .about-me p {
-        width: 80%;
-        margin-left: 3rem;
-    }
+
     
     /*      Desktop Screen Size of 1024 pixels      */
 
@@ -249,6 +263,11 @@ footer {
 }
 
 @media screen and (min-width:1024px) {
+
+    body {
+        max-width: 80%;
+    }
+
     .wrapper-content {
         width: 33%;
     }
@@ -269,15 +288,13 @@ footer {
         padding-left: 30px;
     }
 
-    .about-me img {
-        height: 400px;
-        width: 500px;
-        margin: 3rem;
+    .about-me-img {
+        margin: 0 3rem 0 2rem;
     }
 
-    .about-me p {
-        width: 80%;
-        margin-left: 3rem;
+    .about-me-p {
+        margin: 6rem 6rem 0 2rem;
+        align-self: center;
     }
 
 }
